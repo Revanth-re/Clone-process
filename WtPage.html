@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+  nav{
+    background-color: rgb(76, 238, 141);
+    padding: 1%;
+    border: 2px solid black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: sticky;
+    top:0px;
+    height: 8.5vh;
+   
+  }
+  body{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .box{
+width: 30vw;
+border: 2px solid;
+margin: auto;
+height: 95vh;
+border-radius: 10px;
+
+
+overflow: scroll;
+scrollbar-width: none;
+position: relative;
+
+  }
+ 
+ 
+  .right{
+    color:black;
+  
+    font-size: 1rem;
+   margin-top: 10px;
+margin-left: 1%;
+
+margin: 5%;
+
+/* position: relative; */
+  }
+  .left{
+    text-align: right;
+    font-size: 1rem;
+ margin-right: 10px;
+margin: 5%;
+
+  }
+  .right div{
+    padding: 10%;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  footer{
+    position: fixed;
+    bottom:4.5%;
+    background-color: black;
+    color: white;
+   padding: 1px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   width:29.6vw ;
+   border: 2px solid white;
+  }
+
+#center{
+    background-color: rgb(176, 231, 255);
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: black;
+ 
+}
+#left{
+    font-size: 0.6rem;
+   
+    background-color: rgb(205, 255, 213);
+   border-radius: 10px;
+    padding: 3%;
+
+}
+#right{
+
+padding: 3%;
+border-radius: 10px;
+background-color: rgb(205, 255, 213);
+
+font-size: 0.6rem;
+
+}
+#arrow{
+    font-size:20px ;
+}#user{
+font-size: 20px;
+color: azure;
+margin-left: 4px;
+border: 2px solid black;
+padding: 5px;
+border-radius: 50px;
+margin-top: 3%;
+background-color: black;
+}
+#head{
+    text-align: center;
+    font-size: 1.5rem;
+    color:black;
+   margin-left: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#icons{
+  text-align: right;
+  margin: 1%;
+  margin-left: 4%;
+}
+#icon{
+  text-align: right;
+  margin: 1%;
+  margin-left: 4%;
+}
+#icon{
+    text-align: right;
+  margin: 2%;
+  margin-left: 30%; 
+}
+
+
+#id{
+   width: 15vw;
+   padding: 5px; 
+   text-align: left;
+   margin-top: 0%;
+   margin-bottom: 2%;
+   border: 2px solid;
+   border-radius: 8px;
+   margin-left: 1%;
+   border-color: rgb(25, 215, 98);
+}
+#f-icons{
+    margin-left: 5%;
+}
+.center{
+    position: sticky;
+    top: 15%;
+}
+#f-icons:hover{
+    color: rgb(129, 255, 157);
+    cursor: pointer;
+}
+#icons:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#voice{
+    font-size:1.3rem;
+    margin-top: 1%;
+    border: 1px solid white;
+    text-align: center;
+    margin-left: 2%;
+    border-radius: 50%;
+    color: rgb(11, 163, 112);
+    background-color: azure;
+}
+#f-icon{
+    text-align: center;
+    padding: 2%;
+    margin-left: 0%;
+}
+@media (max-width:768px) {
+    .box{
+        width: 90vw;
+    }
+    footer{
+        width: 89vw;
+    }
+    #id{
+        width: 40vw;
+    }
+    #f-icons{
+        margin-left: 7%;
+    }
+    #icons{
+        margin-left: 2%;
+    }
+    #ico{
+       font-size: 0.8rem;
+    }
+  
+    #voice{
+        font-size: 1rem;
+    }
+}
+#ticks{
+    text-align: right;
+    color: aqua;
+    font-size: 0.8rem;
+    margin-left: 1%;
+}
+#time{
+    /* position: absolute; */
+    font-size: 0.5rem;
+    /* right: 10%;
+ top: 28%; */
+}
+#voice:hover{
+    background-color: black;
+    cursor: pointer;
+}
+#icon:hover{
+color: aliceblue;
+cursor: pointer;
+}
+
+</style>
+<body>
+    <div class="box">
+
+  
+<nav>
+   <div class="rahul">
+  
+   <i id="arrow"  class="fa-solid fa-arrow-left"></i> 
+   <i id="user" class="fa-solid fa-user"></i>
+    <span id="head">Rahul</span>
+   
+        <i class="fa-solid fa-video" id="icon"></i>
+    <i class="fa-solid fa-phone" id="icons"></i>
+    <i class="fa-solid fa-ellipsis-vertical" id="icons"></i>
+
+   </div>
+   <div class="right">
+   
+   </div>
+</nav>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span> <p id="time">10.30pm</p></div>
+<div class="center"><span id="center">Feb-08</span></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="center"><span id="center">Feb-10</span></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="center"><span id="center">Feb-11</span></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum </span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="center"><span id="center">Feb-12</span></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span></div>
+<div class="center"><span id="center">Feb-13</span></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<!-- <div class="center"><span id="center">Feb-14</span></div> -->
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+<div class="right"> <span id="left">Lorem ipsum dolor ipsum</span><p id="time">10.30pm</p></div>
+<div class="left"><span id="right">Lorem ipsum dolor ipsum <i id="ticks" class="fa-solid fa-check-double"></i></span><p id="time">10.30pm</p></div>
+
+<footer>
+    <input type="text" placeholder="entertext" id="id">
+    <i class="fa-solid fa-paperclip" id="f-icons"></i>
+    <i class="fa-solid fa-indian-rupee-sign" id="f-icons"></i>
+
+    <i class="fa-solid fa-camera" id="f-icons"></i>
+
+
+   <span id="voice"><i class="fa-solid fa-microphone" id="f-icon"></i></span>
+
+  
+    
+
+</footer>
+    
+   </div>
+ 
+</body>
+</html>
